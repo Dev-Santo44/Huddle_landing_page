@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light_pink: hsl(321, 100%, 78%);
+  --light_red: hsl(0, 100%, 63%);
+  --dark_cyan: hsl(192, 100%, 9%);
+  --pale_blue: hsl(207, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+header .navbar .logo {
+  width: 50%;
+}
+header .navbar .logo img {
+  width: 244px;
+  margin: 80px;
+}
+header .navbar .btn1 {
+  width: 50%;
+  text-align: right;
+}
+header .navbar .btn1 a {
+  text-decoration: none;
+  color: var(--pink);
+  border: 2px solid var(--pink);
+  margin: 60px;
+  padding: 10px 33px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+header .navbar .btn1 a:hover, header .navbar .btn1 a:active, header .navbar .btn1 a:focus {
+  color: var(--light_pink);
+  border: 2px solid var(--light_pink);
+}
+header .hero {
+  height: 300px;
+  margin: 120px 0px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .hero .heading {
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--dark_cyan);
+  font-size: 47px;
+  font-family: "Poppins", sans-serif;
+}
+header .hero .para {
+  width: 620px;
+  font-size: 21px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark_cyan);
+  text-align: center;
+}
+header .hero .btn2 {
+  color: white;
+  background: var(--pink);
+  padding: 25px 105px;
+  text-decoration: none;
+  font-size: 21px;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
+  background: var(--light_pink);
+  transform: translateY(-7px);
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 0px auto 100px auto;
+}
+.sec1 .screen_mockup {
+  margin: 50px 0px 115px 0px;
+  width: 100%;
+}
+.sec1 .counting {
+  display: flex;
+  flex-direction: row;
+}
+.sec1 .counting .count {
+  font-size: 80px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark_cyan);
+}
+.sec1 .counting .sub {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark_cyan);
+}
+.sec1 .counting .left_count {
+  width: 50%;
+  margin: auto;
+  padding-left: 75px;
+}
+.sec1 .counting .left_count img {
+  width: 45px;
+}
+.sec1 .counting .left_count .pad {
+  padding-left: 2px;
+}
+.sec1 .counting .right_count {
+  width: 50%;
+  margin: auto;
+  padding-left: 175px;
+}
+.sec1 .counting .right_count img {
+  width: 45px;
+}
+.sec1 .counting .right_count .pad2 {
+  padding-left: 40px;
+}
+
+.first_sec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 615px;
+  background-color: var(--pale_blue);
+}
+.first_sec .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first_sec .img_area {
+  width: 53%;
+  align-items: center;
+}
+.first_sec .img_area img {
+  width: 553px;
+  background: transparent;
+}
+.first_sec .t_area {
+  width: 47%;
+  text-align: left;
+}
+.first_sec .content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.first_sec img {
+  background-color: white;
+}
+
+.second_sec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 470px;
+}
+.second_sec .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second_sec .img_area {
+  width: 53%;
+  align-items: center;
+}
+.second_sec .img_area img {
+  width: 553px;
+  background: transparent;
+}
+.second_sec .t_area {
+  width: 47%;
+  text-align: left;
+}
+
+.third_sec {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 470px;
+  background-color: var(--pale_blue);
+}
+.third_sec .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.third_sec .img_area {
+  width: 53%;
+  align-items: center;
+}
+.third_sec .img_area img {
+  width: 553px;
+  background: transparent;
+}
+.third_sec .t_area {
+  width: 47%;
+  text-align: left;
+}/*# sourceMappingURL=main.css.map */

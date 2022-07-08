@@ -1,0 +1,240 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --light_pink: hsl(321, 100%, 78%);
+    --light_red: hsl(0, 100%, 63%);
+    --dark_cyan: hsl(192, 100%, 9%);
+    --pale_blue: hsl(207, 100%, 98%);
+}
+// heading
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+// font-family: 'Poppins', sans-serif;
+
+// Normal
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+// font-family: 'Open Sans', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+}
+
+// header style start-------------------------------------
+
+header{
+    display: flex;
+    flex-direction: column;
+    .navbar{
+        display: flex;
+        height: 200px;
+        align-items: center;
+        .logo{
+            width: 50%;
+            img{
+                width: 244px;
+                margin: 80px;
+            }
+        }
+        .btn1{
+            width: 50%;
+            text-align: right;
+            a{
+                text-decoration: none;
+                color: var(--pink);
+                border: 2px solid var(--pink);
+                margin: 60px;
+                padding: 10px 33px;
+                border-radius: 25px;
+                font-size: 17px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                transition: all 0.4s ease-in-out;
+                &:hover, &:active,&:focus{
+                    color: var(--light_pink);
+                    border: 2px solid var(--light_pink);
+                    
+                }
+            }
+
+        }
+    }
+
+    .hero{
+        height: 300px;
+        margin: 120px 0px 60px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .heading{
+            width: 1000px;
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--dark_cyan);
+            font-size: 47px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .para{
+            width: 620px;
+            font-size: 21px;
+            margin-bottom: 50px;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark_cyan);
+            text-align: center;
+        }
+
+        .btn2{
+            color: white;
+            background: var(--pink);
+            padding: 25px 105px;
+            text-decoration: none;
+            font-size: 21px;
+            border-radius: 50px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            transition: all 0.4s ease-in-out;
+            &:hover,&:focus,&:active{
+                background: var(--light_pink);
+                transform: translateY(-7px);
+                
+            }
+        }
+    }
+}
+
+// mockup and counting area--------------------------------
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 0px auto 100px auto;
+    .screen_mockup{
+        margin: 50px 0px 115px 0px;
+        width: 100%;
+    }
+    .counting{
+        display: flex;
+        flex-direction: row;
+        .count{
+            font-size: 80px;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark_cyan);
+        }
+        .sub{
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark_cyan);
+        }
+        .left_count{
+            width: 50%;
+            margin: auto;
+            padding-left: 75px;
+            img{
+                width: 45px;
+            }
+            .pad{
+                padding-left: 2px;
+            }
+        }
+        .right_count{
+            width: 50%;
+            margin: auto;
+            padding-left: 175px;
+            img{
+                width: 45px;
+            }
+            .pad2{
+                padding-left: 40px;
+            }
+        }
+
+    }
+}
+
+// illustrations area --------------------------------------
+
+// 1st section 
+
+@mixin center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+@mixin i_area {
+        width: 53%;
+        align-items: center;
+        img{
+            width: 553px;
+            background: transparent;
+        }
+}
+@mixin t_area {
+        width: 47%;
+        text-align: left;
+}
+@mixin insect {
+    .center{
+        @include center;
+    }
+    .img_area{
+        @include i_area;
+    }
+    .t_area{
+        @include t_area;
+    } 
+}
+
+.first_sec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 615px;
+    background-color: var(--pale_blue);
+    @include insect;
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    img{
+        background-color: white;
+    }
+}
+
+// 2nd section 
+
+.second_sec{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 470px;
+    @include insect;
+}
+
+// 3rd section
+
+.third_sec{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 470px;
+    background-color: var(--pale_blue);
+    @include insect;
+}
+
+
+
+
+
+
+
+
+
+
+
+
