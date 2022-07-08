@@ -89,6 +89,7 @@ header .hero .btn2 {
   border-radius: 50px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  box-shadow: 0px 4px 20px rgb(163, 163, 163);
   transition: all 0.4s ease-in-out;
 }
 header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
@@ -286,4 +287,60 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 }
 .third_sec .t_area .small_text {
   padding-right: 2px;
+}
+
+.last_sec {
+  width: 100%;
+  height: auto;
+}
+.last_sec .que {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 470px;
+  width: 100%;
+}
+.last_sec .que .heading {
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 29px;
+  color: var(--dark_cyan);
+  font-size: 47px;
+  font-family: "Poppins", sans-serif;
+}
+.last_sec .que .btn2 {
+  color: white;
+  background: var(--pink);
+  padding: 25px 105px;
+  text-decoration: none;
+  font-size: 21px;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 4px 20px rgb(163, 163, 163);
+  transition: all 0.4s ease-in-out;
+}
+.last_sec .que .btn2:hover, .last_sec .que .btn2:focus, .last_sec .que .btn2:active {
+  background: var(--light_pink);
+  transform: translateY(-7px);
+}
+
+.main_foot {
+  width: 100%;
+  height: auto;
+}
+.main_foot .foot_curve {
+  margin-bottom: -5px;
+}
+.main_foot .foot {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  background-color: var(--dark_cyan);
+  color: white;
+}
+.main_foot .foot .bottom_left .logo_2 img {
+  filter: invert(1);
+  width: 245px;
 }/*# sourceMappingURL=main.css.map */
