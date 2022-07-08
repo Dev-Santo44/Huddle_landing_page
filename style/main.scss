@@ -189,20 +189,26 @@ header{
         @include t_area;
     } 
 }
-
+@mixin content {
+        display: flex;
+        flex-direction: row-reverse;
+}
 .first_sec{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 615px;
+    height: auto;
     background-color: var(--pale_blue);
     @include insect;
     .content{
-        display: flex;
-        flex-direction: row-reverse;
+        @include content;
+        margin: 85px 0px 15px 0;
     }
     img{
         background-color: white;
+    }
+    .bot{
+        margin-top:50px;
     }
 }
 
@@ -220,11 +226,21 @@ header{
 
 .third_sec{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     width: 100%;
-    height: 470px;
+    height: auto;
     background-color: var(--pale_blue);
     @include insect;
+    .content{
+        @include content;
+        margin: 40px 0px 15px 0;
+    }
+    img{
+        background-color: white;
+    }
+    .bot{
+        margin-top: 20px;
+    }
 }
 
 

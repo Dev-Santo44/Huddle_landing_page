@@ -147,7 +147,7 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 615px;
+  height: auto;
   background-color: var(--pale_blue);
 }
 .first_sec .center {
@@ -170,9 +170,13 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 .first_sec .content {
   display: flex;
   flex-direction: row-reverse;
+  margin: 85px 0px 15px 0;
 }
 .first_sec img {
   background-color: white;
+}
+.first_sec .bot {
+  margin-top: 50px;
 }
 
 .second_sec {
@@ -201,9 +205,9 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 
 .third_sec {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   width: 100%;
-  height: 470px;
+  height: auto;
   background-color: var(--pale_blue);
 }
 .third_sec .center {
@@ -222,4 +226,15 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 .third_sec .t_area {
   width: 47%;
   text-align: left;
+}
+.third_sec .content {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 40px 0px 15px 0;
+}
+.third_sec img {
+  background-color: white;
+}
+.third_sec .bot {
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
