@@ -167,6 +167,18 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
   width: 47%;
   text-align: left;
 }
+.first_sec .t_area .big_text {
+  font-size: 46px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark_cyan);
+  margin-bottom: 20px;
+}
+.first_sec .t_area .small_text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark_cyan);
+  font-weight: 600;
+}
 .first_sec .content {
   display: flex;
   flex-direction: row-reverse;
@@ -178,12 +190,16 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 .first_sec .bot {
   margin-top: 50px;
 }
+.first_sec .t_area {
+  padding-left: 70px;
+}
 
 .second_sec {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 470px;
+  margin: 150px 0px 75px 0px;
 }
 .second_sec .center {
   display: flex;
@@ -201,6 +217,21 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 .second_sec .t_area {
   width: 47%;
   text-align: left;
+}
+.second_sec .t_area .big_text {
+  font-size: 46px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark_cyan);
+  margin-bottom: 20px;
+}
+.second_sec .t_area .small_text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark_cyan);
+  font-weight: 600;
+}
+.second_sec .t_area .small_text {
+  padding-right: 40px;
 }
 
 .third_sec {
@@ -227,6 +258,18 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
   width: 47%;
   text-align: left;
 }
+.third_sec .t_area .big_text {
+  font-size: 46px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark_cyan);
+  margin-bottom: 20px;
+}
+.third_sec .t_area .small_text {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark_cyan);
+  font-weight: 600;
+}
 .third_sec .content {
   display: flex;
   flex-direction: row-reverse;
@@ -237,4 +280,10 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 }
 .third_sec .bot {
   margin-top: 20px;
+}
+.third_sec .t_area {
+  padding-left: 70px;
+}
+.third_sec .t_area .small_text {
+  padding-right: 2px;
 }/*# sourceMappingURL=main.css.map */

@@ -177,6 +177,19 @@ header{
 @mixin t_area {
         width: 47%;
         text-align: left;
+        .big_text{
+            font-size: 46px;
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark_cyan);
+            margin-bottom: 20px;
+        }
+        .small_text{
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark_cyan);
+            font-weight: 600;
+
+        }
 }
 @mixin insect {
     .center{
@@ -193,6 +206,8 @@ header{
         display: flex;
         flex-direction: row-reverse;
 }
+
+
 .first_sec{
     display: flex;
     flex-direction: column;
@@ -210,6 +225,9 @@ header{
     .bot{
         margin-top:50px;
     }
+    .t_area{
+        padding-left: 70px;
+    }
 }
 
 // 2nd section 
@@ -220,6 +238,12 @@ header{
     width: 100%;
     height: 470px;
     @include insect;
+    margin: 150px 0px 75px 0px;
+    .t_area{
+        .small_text{
+            padding-right: 40px;
+        }
+    }
 }
 
 // 3rd section
@@ -240,6 +264,12 @@ header{
     }
     .bot{
         margin-top: 20px;
+    }
+    .t_area{
+        padding-left: 70px;
+        .small_text{
+            padding-right: 2px;
+        }
     }
 }
 
