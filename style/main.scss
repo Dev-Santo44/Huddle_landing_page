@@ -337,8 +337,8 @@ header{
                 .para_2{
                     font-size: 16px;
                     font-family: 'Open Sans', sans-serif;
-                    font-weight: 500;
-                    padding-right: 210px;
+                    font-weight: 600;
+                    padding-right: 200px;
                     line-height: 27px;
                 }
                 .input{
@@ -404,24 +404,44 @@ header{
                     line-height: 27px;
                     margin: 30px 0px;
                 }
-
+                .font{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 17px;
+                    font-weight: 600;
+                    img{
+                        width: 25px;
+                        margin-right: 28px;
+                    }
+                }
                 .phone{
                     display: flex;
                     flex-direction: row;
+                }
+                .phone_M{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 30px 0px 70px 0;
                 }
 
                 .social{
                     display: flex;
                     svg{
-                        width: 26px;
+                        width: 37px;
                         filter: invert(1);
                     }
                     .insta{
-                        margin: 0px 20px;
+                        margin: 0px 25px;
                     }
                 }
             }
         }
+}
+footer{
+    .attribution{
+        background-color: var(--dark_cyan);
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
 }
 
 
