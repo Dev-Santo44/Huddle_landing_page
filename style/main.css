@@ -446,6 +446,13 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
   width: 37px;
   filter: invert(1);
 }
+.main_foot .foot .bottom_left .social svg:hover {
+  cursor: pointer;
+}
+.main_foot .foot .bottom_left .social .s_hov:hover {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-5px);
+}
 .main_foot .foot .bottom_left .social .insta {
   margin: 0px 25px;
 }

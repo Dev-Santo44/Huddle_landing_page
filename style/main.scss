@@ -428,7 +428,17 @@ header{
                     svg{
                         width: 37px;
                         filter: invert(1);
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
+                    .s_hov{
+                        &:hover{
+                            transition: all 0.4s ease-in-out;
+                            transform: translateY(-5px)
+                        }
+                    }
+
                     .insta{
                         margin: 0px 25px;
                     }
