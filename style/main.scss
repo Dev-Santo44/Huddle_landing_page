@@ -312,7 +312,7 @@ header{
 
 
 .main_foot{
-        width: 100%;
+        width: 1440px;
         height: auto;
         .foot_curve{
             margin-bottom: -5px;
@@ -327,7 +327,7 @@ header{
             .top_right{
                 @include center;
                 width: 50%;
-                padding: 60px 60px 125px 60px;
+                padding: 60px 35px 125px 60px;
                 .head_2{
                     font-family: 'Open Sans', sans-serif;
                     text-transform: uppercase;
@@ -342,7 +342,15 @@ header{
                     line-height: 27px;
                 }
                 .input{
-                    margin-top: 25px;
+                    margin-top: 45px;
+                    p{
+                        font-size: 14px;
+                        font-family: 'Open Sans', sans-serif;
+                        color: var(--light_red);
+                        margin-top: 5px;
+                        visibility: hidden;
+
+                    }
                     .mail{
                         width: 353px;
                         height: 55px;
@@ -352,8 +360,13 @@ header{
                         padding: 0px 20px;
                         &:hover,&:focus,&:active{
                             outline: none;
+                            &:invalid{
+                                border: 1px solid var(--light_red);
+                            }
                         }
                     }
+                    
+                   
                     .submit{
                         font-size: 18px;
                         font-family: 'Open Sans', sans-serif;
@@ -376,10 +389,35 @@ header{
             .bottom_left{
                 @include center;
                 width: 50%;
+                margin-left: 70px;
                 .logo_2{
                     img{
                         filter: invert(1);
                         width: 245px;
+                    }
+                }
+                .para_3{
+                    font-size: 16px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    padding-right: 310px;
+                    line-height: 27px;
+                    margin: 30px 0px;
+                }
+
+                .phone{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .social{
+                    display: flex;
+                    svg{
+                        width: 26px;
+                        filter: invert(1);
+                    }
+                    .insta{
+                        margin: 0px 20px;
                     }
                 }
             }
