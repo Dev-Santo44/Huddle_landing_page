@@ -19,9 +19,10 @@
     box-sizing: border-box;
 }
 body{
-    width: 1440px;
+    width: 100vw;
     height: 100%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 // header style start-------------------------------------
@@ -199,6 +200,7 @@ header{
     .t_area{
         @include t_area;
     } 
+    overflow: hidden;
 }
 @mixin content {
         display: flex;
@@ -219,10 +221,20 @@ header{
     }
     img{
         background-color: white;
+        overflow: hidden;
     }
+    
+    .top_2{
+        display: none;
+    }
+    
     .bot{
         margin-top:50px;
     }
+    .bot_2{
+        display: none;
+    }
+        
     .t_area{
         padding-left: 70px;
     }
@@ -259,6 +271,12 @@ header{
     }
     img{
         background-color: white;
+    }
+    .top_2{
+        display: none;
+    }
+    .bot{
+        display: none;
     }
     .bot{
         margin-top: 20px;
@@ -312,10 +330,16 @@ header{
 
 
 .main_foot{
-        width: 1440px;
+        width: 100%;
         height: auto;
+        overflow: hidden;
         .foot_curve{
+            width: 100%;
             margin-bottom: -5px;
+            overflow: hidden;
+        }
+        .foot_curve_2{
+            display: none;
         }
         .foot{
             display: flex;
@@ -454,7 +478,182 @@ footer{
     }
 }
 
+@media (max-width: 786px){
+    body{
+        width: 135vw;
+        margin: auto;
+    }
+    
+}
+// ----------------------------------------------------
+@mixin for_count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left:0;
+    .pad{
+        padding: 0;
+    }
+    
+}
+
+@media (max-width: 375px){
+    body{
+        width: 100%;
+        margin: auto;
+
+        header{
+            .navbar{
+                height: 75px;
+                .logo{
+                    img{
+                        width: 115px;
+                        margin: 25px;
+                    }
+                }
+                .btn1{
+                    a{
+                        padding: 6px 18px;
+                        font-size: 12px;
+                        border: 1px solid var(--pink);
+                        margin: 0px 15px 0px 0px ;
+                        &:hover, &:active,&:focus{
+                            border: 1px solid var(--light_pink);
+                        }
+                    }
+                }
+
+            }
+            .hero{
+                height: auto;
+                .heading{
+                    width: auto;
+                    padding: 0px 20px;
+                    font-size: 27px;
+                }
+                .para{
+                    width: auto;
+                    font-size: 15px;
+                    padding: 0px 20px;
+                }
+                .btn2{
+                    padding: 15px 45px;
+                    font-size: 15px;
+                }
+            }
+
+        }
+
+        .sec1{
+            width: 100%;
+            .screen_mockup{
+                margin: 38px 40px 115px 40px;
+                img{
+                    width: 300px;
+                }
+            }
+            .counting{
+                flex-direction: column;
+                width: 100%;
+                .count{
+                    font-size: 60px;
+                }
+                .sub{
+                    font-size: 13px;
+                }
+                .left_count{
+                    margin-bottom: 90px;
+                    img{
+                        width: 35px;
+                        transform: translateX(-60px);
+                    }
+                    @include for_count;
+                }
+                .right_count{
+                   @include for_count;
+                   img{
+                       width: 35px;
+                       transform: translateX(-70px);
+                   }
+                   .pad2{
+                    padding-left: 0px;
+                   }
+                    
+                }
+            }
 
 
+        }
+
+
+
+        // illustration area ---------------------------------------------
+
+        /*still font work remained
+        next time submit */
+
+
+        .first_sec{
+            .top{
+                display: none;
+            }
+            .top_2{
+                display: inline;
+            }
+            .content{
+                flex-direction: column;
+                .img_area{
+                    width: 100%;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+            .bot{
+                display: none;
+            }
+            .bot_2{
+                display: inline;
+            }
+
+        }
+
+        .second_sec{
+            flex-direction: column;
+            .img_area{
+                width: 100%;
+                img{
+                    width: 80%;
+                }
+            }
+
+        }
+
+        .third_sec{
+            .content{
+                flex-direction: column;
+                .img_area{
+                    width: 100%;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+
+        // last part
+
+        .last_sec{
+
+        }
+
+        .main_foot{
+
+        }
+
+    }   
+}
 
 
