@@ -235,8 +235,8 @@ header{
         display: none;
     }
         
+    padding-left: 70px;
     .t_area{
-        padding-left: 70px;
     }
 }
 
@@ -349,8 +349,8 @@ header{
             background-color: var(--dark_cyan);
             color: var(--pale_blue);
             .top_right{
-                @include center;
                 width: 50%;
+                @include center;
                 padding: 60px 35px 125px 60px;
                 .head_2{
                     font-family: 'Open Sans', sans-serif;
@@ -376,7 +376,8 @@ header{
 
                     }
                     .mail{
-                        width: 353px;
+                        max-width: 353px;
+                        width: 100%;
                         height: 55px;
                         border-radius: 7px;
                         border: none;
@@ -398,7 +399,7 @@ header{
                         background-color: var(--pink);
                         border-radius: 7px;
                         text-decoration: none;
-                        margin-left: 40px;
+                        margin: 20px auto;
                         color: white;
                         font-weight: 600;
                         transition: all 0.4s ease-in-out;
@@ -546,11 +547,11 @@ footer{
         }
 
         .sec1{
-            width: 100%;
+            width: 100vw;
             .screen_mockup{
-                margin: 38px 40px 115px 40px;
+                
                 img{
-                    width: 300px;
+                    width: 100%;
                 }
             }
             .counting{
@@ -592,9 +593,24 @@ footer{
 
         /*still font work remained
         next time submit */
-
+        @mixin area {
+                width: auto;
+                text-align: center;
+                padding: 0;
+                margin: 80px 0 45px 0;
+                .big_text{
+                    font-size: 25px;
+                }
+                .small_text{
+                    font-size: 14px;
+                    margin: auto;
+                    line-height: 22px;
+                }
+            
+        }
 
         .first_sec{
+            padding-left: 0;
             .top{
                 display: none;
             }
@@ -609,6 +625,13 @@ footer{
                         width: 80%;
                     }
                 }
+            }
+            .t_area{
+                @include area;
+                .small_text{
+                    width: 85%;
+                }
+
             }
             .bot{
                 display: none;
@@ -627,6 +650,13 @@ footer{
                     width: 80%;
                 }
             }
+            .t_area{
+                @include area;
+                .small_text{
+                    width: 90%;
+                    padding-right: 0;
+                }
+            }
 
         }
 
@@ -639,6 +669,12 @@ footer{
                         width: 80%;
                     }
                 }
+                .t_area{
+                    @include area;
+                    .small_text{
+                        width: 88%;
+                    }
+                }
             }
         }
 
@@ -646,11 +682,48 @@ footer{
         // last part
 
         .last_sec{
-
+            .que{
+                .heading{
+                    width: 100%;
+                    font-size: 30px;
+                    margin: 45px 0;
+                }
+                .btn2{
+                    padding: 16px 55px;
+                    font-size: 16px;
+                }
+            }
         }
 
         .main_foot{
-
+            .foot_curve{
+                margin-bottom: -6px;
+            }
+            .foot{
+                flex-direction: column;
+                height: auto;
+                .top_right{
+                    width: 100%;
+                    padding: 20px;
+                    .para_2{
+                        padding-right: 0;
+                    }
+                }
+                .bottom_left{
+                    width: 100%;
+                    margin-left: 0;
+                    padding: 20px;
+                    margin-top: 50px;
+                    .para_3{
+                        padding-right: 0;
+                    }
+                    .logo_2{
+                        img{
+                            width: 170px;
+                        }
+                    }
+                }
+            }
         }
 
     }   
