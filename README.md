@@ -1,4 +1,4 @@
-Personaly i srewed in this project it has become too much lenghty i guess but i will improve next time:)
+Personaly i screwed in this project it has become too much lenghty i guess but i will improve next time:)
 
 
 
