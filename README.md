@@ -1,3 +1,7 @@
+Personaly i screwed in this project it has become too much lenghty i guess but i will improve next time:)
+
+
+
 these icons i used in this project
 
 for wave function 
