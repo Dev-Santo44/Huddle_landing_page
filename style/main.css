@@ -201,6 +201,7 @@ header .hero .btn2:hover, header .hero .btn2:focus, header .hero .btn2:active {
 .first_sec .bot_2 {
   display: none;
 }
+
 .second_sec {
   display: flex;
   flex-direction: row;
